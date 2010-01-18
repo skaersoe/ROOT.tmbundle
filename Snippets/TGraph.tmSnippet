@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>TGraph *${1:graph1} = new TGraph(${2:/* no of elements */},${3:/* x-axis array */},${4:/* y-axis array */});</string>
+	<string>TGraph *${1:graph1} = new TGraph(${2:/* no of elements */},${3:/* x-axis array */},${4:/* y-axis array */});
+
+$1-&gt;Draw("AC*");</string>
 	<key>name</key>
 	<string>TGraph</string>
 	<key>scope</key>

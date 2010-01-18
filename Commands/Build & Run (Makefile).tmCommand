@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>echo "&lt;html&gt;&lt;body&gt;&lt;pre&gt;" 
+cd $TM_DIRECTORY 
+
+/usr/bin/make
+
+echo "&lt;/pre&gt;&lt;/body&gt;&lt;/html&gt; </string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@b</string>
+	<key>name</key>
+	<string>Build &amp; Run (Makefile)</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.c++.root</string>
+	<key>uuid</key>
+	<string>3BEF7287-21D3-4395-9A65-5FA8DB3B4D28</string>
+</dict>
+</plist>

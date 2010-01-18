@@ -2,7 +2,7 @@
 
 dir
 159
-svn+ssh://scm.vm.damconsult.dk/var/svn/nbi/trunk/TextMate%20Bundles/ROOT.tmbundle/Commands
+svn+ssh://scm.vm.damconsult.dk/var/svn/nbi/trunk/TextMate%20Bundles/ROOT.tmbundle/Templates/ROOT%20Makefile.tmTemplate
 svn+ssh://scm.vm.damconsult.dk/var/svn/nbi
 
 
@@ -26,48 +26,14 @@ mdj
 
 ba75c81e-7c68-470e-b4ab-6900d9d64809
 
-Run.tmCommand
-file
-
-
-
-
-2010-01-14T09:54:25.000000Z
-945fcf7adb4a9894e3c7914df0203560
-2010-01-13T20:22:46.144224Z
-155
-mdj
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1177
-
-Build & Run (Makefile).tmCommand
+info.plist
 file
 
 
 
 
 2010-01-18T10:23:28.000000Z
-3c55d5bda203ec0c13616a2909111959
+82f0abbc4a199d711abe0e51d6169b88
 2010-01-17T20:33:29.310267Z
 159
 mdj
@@ -92,5 +58,39 @@ mdj
 
 
 
-727
+522
+
+Makefile
+file
+
+
+
+
+2010-01-18T10:23:28.000000Z
+2dbeb45a4b7e74ade00526cce2a80113
+2010-01-17T20:33:29.310267Z
+159
+mdj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+433
 
