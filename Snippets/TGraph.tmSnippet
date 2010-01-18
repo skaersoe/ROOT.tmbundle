@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>TGraph *${1:graph1} = new TGraph(${2:/* no of elements */},${3:/* x-axis array */},${4:/* y-axis array */});</string>
+	<key>name</key>
+	<string>TGraph</string>
+	<key>scope</key>
+	<string>source.c++.root</string>
+	<key>tabTrigger</key>
+	<string>tg</string>
+	<key>uuid</key>
+	<string>72E53829-9032-4580-AFA5-7739879955AF</string>
+</dict>
+</plist>

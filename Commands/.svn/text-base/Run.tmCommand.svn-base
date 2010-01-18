@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+[[ -z "$TM_FILEPATH" ]] &amp;&amp; TM_TMPFILE=$(mktemp -t rootInTerm)
+: "${TM_FILEPATH:=$TM_TMPFILE}"; cat &gt;"$TM_FILEPATH"
+
+TPY=${TM_PYTHON:-root}
+
+esc () {
+STR="$1" ruby &lt;&lt;"RUBY"
+   str = ENV['STR']
+   str = str.gsub(/'/, "'\\\\''")
+   str = str.gsub(/[\\"]/, '\\\\\\0')
+   print "'#{str}'"
+RUBY
+}
+
+osascript &lt;&lt;- APPLESCRIPT
+	tell app "Terminal"
+	    launch
+	    activate
+	    do script "clear; cd $(esc "${TM_DIRECTORY}"); root -l $(esc "${TM_FILEPATH}"); rm -f $(esc "${TM_TMPFILE}")"
+	    set position of first window to { 100, 100 }
+	end tell
+APPLESCRIPT
+
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run (CINT)</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.c++.root</string>
+	<key>uuid</key>
+	<string>A71DA915-58E4-43CE-AC04-8DBF650F3673</string>
+</dict>
+</plist>

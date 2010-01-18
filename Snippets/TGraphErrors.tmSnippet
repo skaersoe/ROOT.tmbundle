@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>TGraphErrors *${1:gr} = new TGraphErrors(${2:n},${3:x},${4:y},${5:ex},${6:ey});
+$1-&gt;Draw("ALP");</string>
+	<key>name</key>
+	<string>TGraphErrors</string>
+	<key>scope</key>
+	<string>source.c++.root</string>
+	<key>tabTrigger</key>
+	<string>tge</string>
+	<key>uuid</key>
+	<string>7DF2F939-AE26-42C1-BA74-B3AF4D0DEE75</string>
+</dict>
+</plist>

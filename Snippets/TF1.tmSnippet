@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>
+Double_t $3(Double_t *x, Double_t *par)
+{
+	Double_t fitval;	
+	${0:/*Double_t arg = 0; 
+	if (par[2] != 0) arg = (x[0] - par[1])/par[2]; 
+	fitval = par[0]*TMath::Exp(-0.5*arg*arg)*/}; 
+	
+	return fitval;
+}
+
+
+// open a file and get a histogram
+/* TFile *f = new TFile("hsimple.root"); 
+TH1F *hpx = (TH1F*)f-&gt;Get(*hpx); */
+
+// Create a TF1 object using the $3 function defined above. The last three 
+// parameters specify the number of parameters for the function. 
+
+// Fitter: $2 (function: $3)
+TF1 *${1:func} = new TF1("${2:fit}",${3:fitf},${4:/* start range (Ex. -3) */},${5:/* end range (Ex. 3) */},${6:/* Parameters (Ex. 3) */}); 
+
+// set the parameters to the mean and RMS of the histogram 
+$1-&gt;SetParameters(${7:/* Parameters, (ex. 500,hpx-&gt;GetMean(),hpx-&gt;GetRMS()) */});
+
+
+$1-&gt;SetParNames(${8:give the parameters meaningful names /*"Constant","Mean_value","Sigma"*/});
+
+// call TH1::Fit with the name of the TF1 object
+/* hpx-&gt;Fit("$2"); */</string>
+	<key>name</key>
+	<string>TF1</string>
+	<key>scope</key>
+	<string>source.c++.root</string>
+	<key>tabTrigger</key>
+	<string>tf1</string>
+	<key>uuid</key>
+	<string>7D12F097-0DEF-4774-8AC5-6BDD3AE342D9</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>TH3${1:C/S/I/F/D} *${2:h3} = new TH3$1("${3:$2}","${4:$2}", ${5:xbins},${6:from},${7:to}, ${8:ybins},${9:from},${10:to}, ${11:zbins},${12:from},${13:to});
+$2-&gt;Fill(${14:/* xdata */},${15:/* ydata */}, ${16:/* zdata */}, ${17:/* weights */});
+$2-&gt;Draw();</string>
+	<key>name</key>
+	<string>TH3</string>
+	<key>scope</key>
+	<string>source.c++.root</string>
+	<key>tabTrigger</key>
+	<string>th3</string>
+	<key>uuid</key>
+	<string>29CFECAC-C58A-4395-9E70-CD6A5CE075CE</string>
+</dict>
+</plist>

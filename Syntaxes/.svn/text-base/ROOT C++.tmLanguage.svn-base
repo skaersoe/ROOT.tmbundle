@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>comment</key>
+	<string>ROOT Framework bundle by Morten Dam Joergensen</string>
+	<key>fileTypes</key>
+	<array>
+		<string>C</string>
+		<string>cpp</string>
+		<string>cp</string>
+		<string>cxx</string>
+		<string>c++</string>
+		<string>cc</string>
+		<string>h</string>
+		<string>hh</string>
+		<string>hpp</string>
+		<string>h++</string>
+	</array>
+	<key>firstLineMatch</key>
+	<string>-\*- C\+\+ -\*-</string>
+	<key>foldingStartMarker</key>
+	<string>(?x)
+		 /\*\*(?!\*)
+		|^(?![^{]*?//|[^{]*?/\*(?!.*?\*/.*?\{)).*?\{\s*($|//|/\*(?!.*?\*/.*\S))
+	</string>
+	<key>foldingStopMarker</key>
+	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
+	<key>keyEquivalent</key>
+	<string>^~C</string>
+	<key>name</key>
+	<string>ROOT C++</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.c++</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.c++.root</string>
+	<key>uuid</key>
+	<string>826344F8-8304-41CE-9780-C4922E255108</string>
+</dict>
+</plist>
