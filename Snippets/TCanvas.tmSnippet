@@ -4,6 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>TCanvas *${1:c1} = new TCanvas("${2:$1}","${3:My Canvas}",${4:200},${5:10},${6:700},${7:500});</string>
+	<key>keyEquivalent</key>
+	<string>~@g</string>
 	<key>name</key>
 	<string>TCanvas</string>
 	<key>scope</key>

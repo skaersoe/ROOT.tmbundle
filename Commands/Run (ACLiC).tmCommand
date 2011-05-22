@@ -21,10 +21,10 @@ RUBY
 }
 
 osascript &lt;&lt;- APPLESCRIPT
-	tell app "Utilities/Terminal"
+	tell app "Terminal"
 	    launch
 	    activate
-	    do script "clear; cd $(esc "${TM_DIRECTORY}"); root -l $(esc "${TM_FILEPATH}"); rm -f $(esc "${TM_TMPFILE}")"
+	    do script "clear; cd $(esc "${TM_DIRECTORY}"); root -l $(esc "${TM_FILEPATH}")+; rm -f $(esc "${TM_TMPFILE}")"
 	    set position of first window to { 100, 100 }
 	end tell
 APPLESCRIPT
@@ -33,14 +33,14 @@ APPLESCRIPT
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
-	<string>@r</string>
+	<string>@R</string>
 	<key>name</key>
-	<string>Run (CINT)</string>
+	<string>Run (ACLiC)</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
 	<string>source.c++.root</string>
 	<key>uuid</key>
-	<string>A71DA915-58E4-43CE-AC04-8DBF650F3673</string>
+	<string>F5178443-5604-4D43-A6BC-B7652E94251E</string>
 </dict>
 </plist>

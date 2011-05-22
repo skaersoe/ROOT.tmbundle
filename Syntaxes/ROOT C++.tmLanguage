@@ -36,6 +36,12 @@
 			<key>include</key>
 			<string>source.c++</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Double_t|Float_t|Int_t|Char_t|Short_t|Long_t|Bool_t|Color_t|Double32_t|Long64_t|Marker_t|Float16_t|Size_t|Style_t|Text_t|UChar_t|UInt_t)\b</string>
+			<key>name</key>
+			<string>storage.type.c++.root</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.c++.root</string>
