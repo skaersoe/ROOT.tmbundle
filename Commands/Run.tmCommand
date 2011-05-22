@@ -21,7 +21,7 @@ RUBY
 }
 
 osascript &lt;&lt;- APPLESCRIPT
-	tell app "Utilities/Terminal"
+	tell app "Terminal"
 	    launch
 	    activate
 	    do script "clear; cd $(esc "${TM_DIRECTORY}"); root -l $(esc "${TM_FILEPATH}"); rm -f $(esc "${TM_TMPFILE}")"
